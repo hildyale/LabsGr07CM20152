@@ -9,7 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
-import com.thenewcircle.YambaClientLib.yamba-client;
+import com.thenewcircle.yamba.client.YambaClient;
 
 public class StatusActivity extends AppCompatActivity implements View.OnClickListener{
     private Button mButtonTweet;
