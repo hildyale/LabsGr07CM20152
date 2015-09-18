@@ -1,8 +1,8 @@
 package co.edu.udea.cmovil.gr7.yamba;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.*;
 import com.thenewcircle.yamba.client.YambaClient;
 
-public class StatusActivity extends AppCompatActivity implements View.OnClickListener{
+public class StatusActivity extends Activity {
     private Button mButtonTweet;
     private EditText mTextStatus;
     private TextView mTextCount;
