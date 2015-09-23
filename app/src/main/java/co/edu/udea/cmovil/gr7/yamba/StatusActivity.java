@@ -33,7 +33,7 @@ public class StatusActivity extends Activity {
 
         mTextCount.setText("140");
         mDefaultColor = mTextCount.getTextColors().getDefaultColor();
-        deshabiltar();
+        deshabilitar();
         Log.d("Yamba","onCreate");
 
     }
@@ -71,39 +71,35 @@ public class StatusActivity extends Activity {
         Log.d("TAG", "onClicked");
     }
 
-    public void deshabiltar(){
+    public void deshabilitar(){
         mButtonTweet.setEnabled(false);
         mTextStatus.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                String status=mTextStatus.getText().toString();
-                if(status.length()>0){
-                    mButtonTweet.setEnabled(true);
-                }else{
-                    mButtonTweet.setEnabled(false);
-                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String status=mTextStatus.getText().toString();
-                if(status.length()>01){
-                    mButtonTweet.setEnabled(true);
-                }else{
-                    mButtonTweet.setEnabled(false);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                String status=mTextStatus.getText().toString();
+                int cont = Integer.parseInt(mTextCount.getText().toString());
+                cont = 140 - status.length();
                 if(status.length()>0){
                     mButtonTweet.setEnabled(true);
+                    mTextCount.setText(cont+"");
+                    Log.d("hola",cont+"");
                 }else{
                     mButtonTweet.setEnabled(false);
+                    mTextCount.setText("140");
                 }
-
             }
+
+
         });
     }
 

@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/export/estudiantes/alejandro.isazad/AndroidStudioProjects/LabsGr07CM20152/app/build/intermediates/exploded-aar/com.newcircle/yamba-client/2.0.0/classes.jar"
+        jar="/export/estudiantes/alejandro.isazad/Descargas/LabsGr07CM20152/app/build/intermediates/exploded-aar/com.newcircle/yamba-client/2.0.0/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="9fef9ec67ac784c86d3705824f3d06539ccbb641">
-        <dex dex="/export/estudiantes/alejandro.isazad/AndroidStudioProjects/LabsGr07CM20152/app/build/intermediates/pre-dexed/debug/classes-e4c67ccdba7eccb48a3d5954c5a27c9b72deda68.jar" />
+        <dex dex="/export/estudiantes/alejandro.isazad/Descargas/LabsGr07CM20152/app/build/intermediates/pre-dexed/debug/classes-f35b052199619391f42d011a26756b56a4dfdae8.jar" />
     </item>
 
 </items>
